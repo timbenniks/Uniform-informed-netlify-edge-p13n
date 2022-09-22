@@ -1,0 +1,10 @@
+[build]
+  command = 'npm run ci:build'
+  publish = '.next'
+
+[template]
+  incoming-hooks = ["Uniform"]
+
+[[edge_functions]]
+  path = "/*"
+  function = "context-middleware"

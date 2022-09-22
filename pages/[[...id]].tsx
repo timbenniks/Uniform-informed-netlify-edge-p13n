@@ -9,10 +9,10 @@ import {
 import { Composition, Slot } from "@uniformdev/canvas-react";
 import { canvasClient } from "lib/canvasClient";
 import { resolveRenderer } from "../components";
-import { ToggleEmbeddedContextDevTools } from "@uniformdev/context-devtools";
+// import { ToggleEmbeddedContextDevTools } from "@uniformdev/context-devtools";
 import getConfig from "next/config";
-const { serverRuntimeConfig } = getConfig();
-const { projectId, apiKey, apiHost } = serverRuntimeConfig;
+// const { serverRuntimeConfig } = getConfig();
+// const { projectId, apiKey, apiHost } = serverRuntimeConfig;
 
 const PreviewDevPanel = dynamic(
   () => import("lib/preview/PreviewDevPanel/PreviewDevPanel")
@@ -40,13 +40,13 @@ export default function Home({
           <PreviewDevPanel preview={preview} composition={composition} />
         )}
 
-        <ToggleEmbeddedContextDevTools
+        {/* <ToggleEmbeddedContextDevTools
           initialSettings={{
             apiHost: apiHost,
             apiKey: apiKey,
             projectId: projectId,
           }}
-        />
+        /> */}
       </div>
     </>
   );

@@ -24,7 +24,7 @@ export default function Home({
   return (
     <>
       <Head>
-        <title>{`UniformConf${
+        <title>{`Le Yolo?${
           composition?._name ? ` | ${composition?._name}` : ""
         }`}</title>
       </Head>

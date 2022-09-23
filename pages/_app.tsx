@@ -10,7 +10,7 @@ const {
   publicRuntimeConfig: { outputType },
 } = getConfig();
 
-export default function UniformConfApp({
+export default function App({
   Component,
   pageProps,
   serverUniformContext,

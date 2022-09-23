@@ -18,17 +18,12 @@
     "push": "run-s push:components push:compositions",
     "push:compositions": "uniform presentation composition push ./data/canvas/compositions",
     "push:components": "uniform presentation component push ./data/canvas/components",
-    "package": "run-s package:canvas package:context",
-    "package:canvas": "run-s package:components package:compositions",
-    "package:compositions": "uniform presentation composition pull ./data/uniformconf.yaml",
-    "package:components": "uniform presentation component pull ./data/uniformconf.yaml",
-    "package:context:signals": "uniform context signal pull ./data/uniformconf.yaml",
-    "package:context:enrichments": "uniform context enrichment pull ./data/uniformconf.yaml",
-    "package:context:aggregates": "uniform context aggregate pull ./data/uniformconf.yaml",
-    "package:context:quirks": "uniform context quirk pull ./data/uniformconf.yaml",
-    "package:context:tests": "uniform context test pull ./data/uniformconf.yaml",
-    "package:context": "run-s package:context:signals package:context:enrichments package:context:quirks package:context:tests package:context:aggregates",
-    "start:stackblitz": "npm run dev:next"
+    "pull:context:signals": "uniform context signal pull ./data/yolo.yaml",
+    "pull:context:enrichments": "uniform context enrichment pull ./data/yolo.yaml",
+    "pull:context:aggregates": "uniform context aggregate pull ./data/yolo.yaml",
+    "pull:context:quirks": "uniform context quirk pull ./data/yolo.yaml",
+    "pull:context:tests": "uniform context test pull ./data/yolo.yaml",
+    "pull:context": "run-s pull:context:signals pull:context:enrichments pull:context:quirks pull:context:tests pull:context:aggregates"
   },
   "dependencies": {
     "@uniformdev/context-edge-netlify": "^17.0.0",

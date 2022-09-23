@@ -8,12 +8,6 @@ import Document, {
 } from "next/document";
 import { enableNextSsr } from "@uniformdev/context-next";
 import { createUniformContext } from "../lib/context/uniformContext";
-import getConfig from "next/config";
-
-const {
-  publicRuntimeConfig: { gaTrackingId },
-} = getConfig();
-
 class MyDocument extends Document {
   static async getInitialProps(
     ctx: DocumentContext
@@ -29,10 +23,7 @@ class MyDocument extends Document {
         <Head>
           <link href="/favicon/favicon.ico" rel="icon" />
           <link href="/favicon/apple-touch-icon.png" rel="apple-touch-icon" />
-          <meta
-            name="description"
-            content="UniformConf, a Uniform content demo site"
-          />
+          <meta name="description" content="Yolo?" />
         </Head>
         <body className="leading-normal tracking-normal text-white gradient">
           <Main />

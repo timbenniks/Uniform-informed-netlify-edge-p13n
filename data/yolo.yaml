@@ -1,0 +1,26 @@
+signals:
+  - id: isFromFrance
+    name: Is From France
+    cap: 100
+    crit:
+      op: '&'
+      type: G
+      clauses:
+        - key: ntl-country-code
+          type: QK
+          match:
+            cs: false
+            op: '='
+            rhs: FR
+    dur: p
+    description: ''
+    str: 50
+enrichments:
+  - id: '1'
+    name: Fan
+    cap: 100
+    values:
+      - id: '2'
+        value: Jon Snow
+      - id: '1'
+        value: Steve Ballmer

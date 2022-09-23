@@ -6,9 +6,11 @@ import {
 } from "@uniformdev/canvas-react";
 
 import Yolo from "./Yolo";
+import Person from "./Person";
 
 const mappings: ComponentMapping = {
   yolo: Yolo,
+  person: Person,
 };
 
 type ComponentMapping = Record<string, ComponentType<any>>;

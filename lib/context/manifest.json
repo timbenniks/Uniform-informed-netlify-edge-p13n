@@ -1,6 +1,11 @@
 {
   "project": {
     "pz": {
+      "enr": {
+        "1": {
+          "cap": 100
+        }
+      },
       "sig": {
         "isFromFrance": {
           "str": 50,

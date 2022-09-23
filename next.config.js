@@ -5,7 +5,7 @@ const nextConfig = {
     projectId: process.env.UNIFORM_PROJECT_ID,
     apiKey: process.env.UNIFORM_API_KEY,
     apiHost: process.env.UNIFORM_CLI_BASE_URL || "https://uniform.app",
-    previewSecret: process.env.UNIFORM_PREVIEW_SECRET || "uniformconf",
+    previewSecret: process.env.UNIFORM_PREVIEW_SECRET || "yolo",
   },
   publicRuntimeConfig: {
     gaTrackingId: process.env.GA4_ID,

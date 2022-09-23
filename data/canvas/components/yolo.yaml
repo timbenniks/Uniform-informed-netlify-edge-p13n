@@ -1,0 +1,15 @@
+id: yolo
+name: yolo
+icon: screen
+parameters:
+  - id: title
+    name: title
+    type: text
+    helpText: ''
+    typeConfig: null
+useTeamPermissions: true
+slots: []
+titleParameter: title
+canBeComposition: false
+created: '2022-09-22T14:12:11.616556+00:00'
+updated: '2022-09-23T08:44:46.11924+00:00'

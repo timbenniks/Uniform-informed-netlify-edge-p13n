@@ -2,26 +2,14 @@ id: page
 name: Page
 icon: file-document
 parameters: []
+useTeamPermissions: true
 slots:
-  - id: header
-    name: Header
-    allowedComponents:
-      - header
-    inheritAllowedComponents: false
   - id: content
     name: content
     allowedComponents:
       - $test
-      - hero
       - $personalization
-      - registrationForm
-      - talklist
-      - whyattend
-    inheritAllowedComponents: false
-  - id: footer
-    name: Footer
-    allowedComponents:
-      - footer
+      - yolo
     inheritAllowedComponents: false
 defaults:
   type: page
@@ -37,7 +25,6 @@ slugSettings:
   required: 'yes'
   regularExpression: ''
   regularExpressionMessage: ''
-titleParameter: ''
 canBeComposition: true
-created: '2022-03-09T01:57:44.546901+00:00'
-updated: '2022-03-09T01:57:44.546901+00:00'
+created: '2022-09-22T13:32:58.4159+00:00'
+updated: '2022-09-22T14:12:20.728897+00:00'

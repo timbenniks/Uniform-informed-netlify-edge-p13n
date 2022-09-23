@@ -1,56 +1,8 @@
 {
   "project": {
     "pz": {
-      "agg": {
-        "techies": {
-          "inputs": [
-            {
-              "dim": "1_dev"
-            }
-          ]
-        },
-        "submitCallForPapers": {
-          "inputs": [
-            {
-              "dim": "callForPapers"
-            }
-          ]
-        },
-        "nonTechies": {
-          "inputs": [
-            {
-              "dim": "1_mkt"
-            }
-          ]
-        }
-      },
-      "enr": {
-        "1": {
-          "cap": 100
-        }
-      },
       "sig": {
-        "registrationComplete": {
-          "str": 100,
-          "cap": 100,
-          "dur": "p",
-          "crit": {
-            "op": "&",
-            "type": "G",
-            "clauses": [
-              {
-                "type": "CK",
-                "match": {
-                  "cs": false,
-                  "op": "=",
-                  "rhs": "true"
-                },
-                "cookieName": "unfrmconf_registered"
-              }
-            ]
-          }
-        },
-        "callForPapers": {
+        "isFromFrance": {
           "str": 50,
           "cap": 100,
           "dur": "p",
@@ -59,21 +11,19 @@
             "type": "G",
             "clauses": [
               {
-                "type": "QS",
+                "key": "ntl-country-code",
+                "type": "QK",
                 "match": {
                   "cs": false,
                   "op": "=",
-                  "rhs": "unfrmconf"
-                },
-                "queryName": "utm_campaign"
+                  "rhs": "FR"
+                }
               }
             ]
           }
         }
       }
     },
-    "test": {
-      "whyAttendTest": {}
-    }
+    "test": {}
   }
 }

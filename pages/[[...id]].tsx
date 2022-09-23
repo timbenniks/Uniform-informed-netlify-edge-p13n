@@ -29,7 +29,11 @@ export default function Home({
         }`}</title>
       </Head>
       <div>
-        <Composition data={composition} resolveRenderer={resolveRenderer}>
+        <Composition
+          data={composition}
+          resolveRenderer={resolveRenderer}
+          behaviorTracking="onView"
+        >
           <Slot name="content" />
         </Composition>
         {preview && (

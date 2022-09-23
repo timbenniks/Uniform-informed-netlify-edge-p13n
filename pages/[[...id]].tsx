@@ -34,7 +34,9 @@ export default function Home({
           resolveRenderer={resolveRenderer}
           behaviorTracking="onView"
         >
-          <Slot name="content" />
+          <div style={{ paddingTop: "310px" }}>
+            <Slot name="content" />
+          </div>
         </Composition>
         {preview && (
           <PreviewDevPanel preview={preview} composition={composition} />

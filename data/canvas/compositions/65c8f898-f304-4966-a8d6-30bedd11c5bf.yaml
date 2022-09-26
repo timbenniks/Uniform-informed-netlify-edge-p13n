@@ -1,0 +1,172 @@
+composition:
+  _name: So much personalization
+  _id: 65c8f898-f304-4966-a8d6-30bedd11c5bf
+  _slug: /p13n
+  type: page
+  parameters: {}
+  slots:
+    content:
+      - _id: e48d30ac-dc09-4f27-853d-2b3e4d9db1f6
+        type: $personalization
+        slots:
+          pz:
+            - _id: 89d986e8-220a-40e2-89f0-45cd761ca4e2
+              type: yolo
+              parameters:
+                title:
+                  type: text
+                  value: 'A Freedom Ballmer Yolo '
+                $pzCrit:
+                  type: $pzCrit
+                  value:
+                    crit:
+                      - l: '1_1'
+                        r: '50'
+                        op: '='
+                      - l: '1_2'
+                        r: '50'
+                        op: <
+                      - l: isFromFrance
+                        r: '50'
+                        op: <
+                    name: 'yolo: A Steve Fan'
+            - _id: 1077c12c-082d-4152-bd5a-64974bdf5efb
+              type: yolo
+              parameters:
+                title:
+                  type: text
+                  value: A French Ballmer Yolo
+                $pzCrit:
+                  type: $pzCrit
+                  value:
+                    crit:
+                      - l: '1_1'
+                        r: '50'
+                        op: '='
+                      - l: '1_2'
+                        r: '50'
+                        op: <
+                      - l: isFromFrance
+                        r: '50'
+                        op: '='
+                    name: 'yolo: A Steve Fan'
+            - _id: b0782845-a3df-4340-84dc-817a6139c4a8
+              type: yolo
+              parameters:
+                title:
+                  type: text
+                  value: Snow Yolo is slow
+                $pzCrit:
+                  type: $pzCrit
+                  value:
+                    crit:
+                      - l: '1_2'
+                        r: '50'
+                        op: '='
+                      - l: '1_1'
+                        r: '50'
+                        op: '='
+                      - l: isFromFrance
+                        r: '50'
+                        op: <
+                    name: 'yolo: Slow Yolo'
+            - _id: fa0d4885-ca14-4e91-8460-ba965d1d5d5f
+              type: yolo
+              parameters:
+                title:
+                  type: text
+                  value: 'La Neige Yolo '
+                $pzCrit:
+                  type: $pzCrit
+                  value:
+                    crit:
+                      - l: '1_2'
+                        r: '50'
+                        op: '='
+                      - l: '1_1'
+                        r: '50'
+                        op: '='
+                      - l: isFromFrance
+                        r: '50'
+                        op: '='
+                    name: 'yolo: Slow Yolo'
+            - _id: fdb3b4ae-856b-44bd-9484-6d2d8a160e4a
+              type: yolo
+              parameters:
+                title:
+                  type: text
+                  value: La Yólo Française
+                $pzCrit:
+                  type: $pzCrit
+                  value:
+                    crit:
+                      - l: isFromFrance
+                        r: '50'
+                        op: '='
+                    name: 'yolo: La Yólo Française'
+            - _id: e87ad9a1-f5e6-4ecd-b755-b14e53f01b6d
+              type: yolo
+              parameters:
+                title:
+                  type: text
+                  value: YOLO
+        parameters:
+          count:
+            type: number
+            value: '1'
+          trackingEventName:
+            type: text
+            value: yooolo
+      - _id: 26b8a38b-d0a9-424b-9ac9-bd158467d281
+        type: person
+        parameters:
+          name:
+            type: text
+            value: Han Solo
+          image:
+            type: text
+            value: >-
+              https://uploads.neatorama.com/images/posts/305/91/91305/1467460383-0.jpg
+      - _id: ae050cf4-d7af-42eb-808b-51d7dc40570d
+        type: person
+        parameters:
+          $enr:
+            type: $enr
+            value:
+              - cat: '1'
+                key: '1'
+                str: 50
+          name:
+            type: text
+            value: Steve Ballmer
+          image:
+            type: text
+            value: https://c.tenor.com/ZNu5AVd29LEAAAAC/steve-ballmer-microsoft.gif
+      - _id: d1b76d9b-6e88-407a-bd0f-275b9ad2db12
+        type: person
+        parameters:
+          $enr:
+            type: $enr
+            value:
+              - cat: '1'
+                key: '2'
+                str: 50
+          name:
+            type: text
+            value: Jon Slow
+          image:
+            type: text
+            value: https://img-9gag-fun.9cache.com/photo/ayxO7RV_460s.jpg
+      - _id: c612317a-b945-4c14-b028-1536b76e7465
+        type: person
+        parameters:
+          name:
+            type: text
+            value: Steve Jobs
+          image:
+            type: text
+            value: >-
+              https://i.dailymail.co.uk/i/pix/2013/10/16/article-2462931-18C5CBF100000578-642_634x603.jpg
+created: '2022-09-26T13:02:50.751929+00:00'
+modified: '2022-09-26T13:03:06.940287+00:00'
+pattern: false

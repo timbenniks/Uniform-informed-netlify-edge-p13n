@@ -1,6 +1,6 @@
 id: yolo
 name: yolo
-icon: screen
+icon: bulb
 parameters:
   - id: title
     name: title
@@ -12,4 +12,4 @@ slots: []
 titleParameter: title
 canBeComposition: false
 created: '2022-09-22T14:12:11.616556+00:00'
-updated: '2022-09-23T08:44:46.11924+00:00'
+updated: '2022-09-26T13:09:31.361308+00:00'

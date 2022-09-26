@@ -10,6 +10,7 @@ slots:
       - $test
       - $personalization
       - yolo
+      - person
     inheritAllowedComponents: false
 defaults:
   type: page
@@ -27,4 +28,4 @@ slugSettings:
   regularExpressionMessage: ''
 canBeComposition: true
 created: '2022-09-22T13:32:58.4159+00:00'
-updated: '2022-09-22T14:12:20.728897+00:00'
+updated: '2022-09-23T11:40:45.134321+00:00'

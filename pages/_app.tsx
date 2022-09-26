@@ -7,7 +7,7 @@ import "../styles/style.css";
 
 const clientContext = createUniformContext();
 const {
-  publicRuntimeConfig: { outputType },
+  serverRuntimeConfig: { outputType },
 } = getConfig();
 
 export default function App({

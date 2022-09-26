@@ -6,10 +6,10 @@ const nextConfig = {
     apiKey: process.env.UNIFORM_API_KEY,
     apiHost: process.env.UNIFORM_CLI_BASE_URL || "https://uniform.app",
     previewSecret: process.env.UNIFORM_PREVIEW_SECRET || "yolo",
+    outputType: process.env.UNIFORM_OUTPUT_TYPE,
   },
   publicRuntimeConfig: {
     gaTrackingId: process.env.GA4_ID,
-    outputType: process.env.UNIFORM_OUTPUT_TYPE,
   },
 };
 
